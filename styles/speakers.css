@@ -1,1 +1,52 @@
 @import "./base.css";
+
+.shopping-cart-icon g path,
+.menu--icon path,
+.menu--close--icon g path {
+  fill: var(--color-primary);
+}
+
+.speaker__wrapper {
+  max-width: 450px;
+}
+
+.speakers__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 200px;
+  grid-row-gap: 120px;
+}
+.speaker__photo {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 36px;
+}
+.speaker__name {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.speaker__company {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.company__bio {
+  font-size: 20px;
+}
+
+.speaker__company,
+.company__bio {
+  color: var(--color-text-on-secondary);
+}
+
+.nav {
+  color: var(--color-primary);
+  background-color: var(--color-text-on-primary);
+}
+
+@media (width < 1000px) {
+  .speakers__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,7 +1,26 @@
 @import "./base.css";
 
-body {
-  background-color: var(--color-primary);
-  color: var(--color-text-on-primary);
-  font-family: var(--font-family);
+.home .main__heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.home .main__sub-heading {
+  font-size: 40px;
+}
+
+@media (width < 1000px) {
+  .home .main__heading {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 590px) {
+  .home .main__heading {
+    font-size: 40px;
+  }
+
+  .home .main__sub-heading {
+    font-size: 24px;
+  }
 }
